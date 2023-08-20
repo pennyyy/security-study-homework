@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="alert('行内式 - 弹窗1')">弹窗1-行内式</button>
+<button onclick="prompt('行内式 - 弹窗2')">弹窗2-行内式</button>
+</body>
+<script>
+function showAlert() {
+    alert('内嵌式 - 弹窗1');
+}
+
+function showPrompt() {
+    prompt('内嵌式 - 弹窗2');
+}
+</script>
+
+<button onclick="showAlert()">弹窗1-内嵌式</button>
+<button onclick="showPrompt()">弹窗2-内嵌式</button>
+<script src="3.js"></script>
+
+<button onclick="showAlert()">弹窗1-引入外部文件alert</button>
+<button onclick="showPrompt()">弹窗2-引入外部文件print</button>
+</html>
